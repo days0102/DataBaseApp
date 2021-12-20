@@ -1,0 +1,7 @@
+#不跟踪的文件
+*.resx
+*.csproj
+*.xsd
+bin/
+obj/
+Properties/
