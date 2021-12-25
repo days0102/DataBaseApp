@@ -36,6 +36,8 @@ namespace WindowsFormsApp1
             this.tbCcredit = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -59,7 +61,7 @@ namespace WindowsFormsApp1
             // 
             // tbCname
             // 
-            this.tbCname.Location = new System.Drawing.Point(167, 160);
+            this.tbCname.Location = new System.Drawing.Point(167, 150);
             this.tbCname.Name = "tbCname";
             this.tbCname.Size = new System.Drawing.Size(127, 25);
             this.tbCname.TabIndex = 3;
@@ -68,7 +70,7 @@ namespace WindowsFormsApp1
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(79, 171);
+            this.label2.Location = new System.Drawing.Point(79, 161);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 15);
             this.label2.TabIndex = 2;
@@ -103,11 +105,35 @@ namespace WindowsFormsApp1
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(164, 178);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 15);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "label3";
+            this.label3.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(164, 270);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 15);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "label5";
+            this.label5.Visible = false;
+            // 
             // CourseUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(388, 414);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tbCcredit);
             this.Controls.Add(this.label4);
@@ -132,5 +158,7 @@ namespace WindowsFormsApp1
         public System.Windows.Forms.TextBox tbCcredit;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
     }
 }

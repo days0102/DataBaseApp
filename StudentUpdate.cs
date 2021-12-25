@@ -47,7 +47,7 @@ namespace WindowsFormsApp1
                 else
                     para[1].Value = Convert.ToInt32(tbSage.Text);
             }
-            catch(Exception ex)
+            catch(Exception)
             {
                 label6.Text = "年龄输入错误";
                 label6.Visible = true;
@@ -87,6 +87,46 @@ namespace WindowsFormsApp1
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbfemale_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbmale_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbSage_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbSname_TextChanged(object sender, EventArgs e)
         {
 
         }

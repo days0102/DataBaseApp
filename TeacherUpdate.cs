@@ -32,15 +32,20 @@ namespace WindowsFormsApp1
             else
                 t.Tname = this.tbTname.Text;
             t.Post = this.tbPost.Text;
-            try
+            if (tbSalary.Text == "")
+                t.Salary = 0;
+            else
             {
-                t.Salary = Convert.ToInt32(this.tbSalary.Text);
-            }
-            catch(Exception ex)
-            {
-                label5.Text = "工资输入错误";
-                label5.Visible = true;
-                return;
+                try
+                {
+                    t.Salary = Convert.ToInt32(this.tbSalary.Text);
+                }
+                catch (Exception)
+                {
+                    label5.Text = "工资输入错误";
+                    label5.Visible = true;
+                    return;
+                }
             }
             try
             {

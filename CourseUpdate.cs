@@ -19,14 +19,33 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            label3.Visible = false;
+            label5.Visible = false;
             Course c = new Course();
             c.Cno = this.tbCno.Text;
+            if (tbCname.Text == "")
+            {
+                label3.Text = "课程名不能为空";
+                label3.Visible = true;
+                return;
+            }
             c.Cname = this.tbCname.Text;
             //c.Cpno = this.tbCpno.Text;
             if (tbCcredit.Text == "")
                 c.Ccredit = 0;
             else
-                c.Ccredit = Convert.ToInt32(this.tbCcredit.Text);
+            {
+                try
+                {
+                    c.Ccredit = Convert.ToInt32(this.tbCcredit.Text);
+                }
+                catch (Exception)
+                {
+                    label5.Text = "学分输入错误";
+                    label5.Visible = true;
+                    return;
+                }
+            }
             try
             {
                 if (Course.UpdateCourse(c) == 1)

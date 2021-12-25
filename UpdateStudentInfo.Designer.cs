@@ -42,6 +42,7 @@ namespace WindowsFormsApp1
             this.rbfemale = new System.Windows.Forms.RadioButton();
             this.rbmale = new System.Windows.Forms.RadioButton();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -124,7 +125,7 @@ namespace WindowsFormsApp1
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(179, 220);
+            this.label5.Location = new System.Drawing.Point(177, 220);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(22, 15);
             this.label5.TabIndex = 25;
@@ -155,17 +156,28 @@ namespace WindowsFormsApp1
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(182, 91);
+            this.label7.Location = new System.Drawing.Point(179, 155);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 15);
             this.label7.TabIndex = 27;
             this.label7.Visible = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(179, 299);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 15);
+            this.label8.TabIndex = 28;
+            this.label8.Visible = false;
             // 
             // UpdateStudentInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(394, 450);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -201,5 +213,6 @@ namespace WindowsFormsApp1
         public System.Windows.Forms.RadioButton rbfemale;
         public System.Windows.Forms.RadioButton rbmale;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }

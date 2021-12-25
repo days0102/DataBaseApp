@@ -68,6 +68,7 @@ namespace WindowsFormsApp1
             this.tbSname.Name = "tbSname";
             this.tbSname.Size = new System.Drawing.Size(100, 25);
             this.tbSname.TabIndex = 2;
+            this.tbSname.TextChanged += new System.EventHandler(this.tbSname_TextChanged);
             // 
             // label2
             // 
@@ -93,6 +94,7 @@ namespace WindowsFormsApp1
             this.tbSage.Name = "tbSage";
             this.tbSage.Size = new System.Drawing.Size(100, 25);
             this.tbSage.TabIndex = 5;
+            this.tbSage.TextChanged += new System.EventHandler(this.tbSage_TextChanged);
             // 
             // button2
             // 
@@ -123,6 +125,7 @@ namespace WindowsFormsApp1
             this.label5.Size = new System.Drawing.Size(0, 15);
             this.label5.TabIndex = 25;
             this.label5.Visible = false;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -133,6 +136,7 @@ namespace WindowsFormsApp1
             this.label6.Size = new System.Drawing.Size(0, 15);
             this.label6.TabIndex = 26;
             this.label6.Visible = false;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -142,6 +146,7 @@ namespace WindowsFormsApp1
             this.label7.Size = new System.Drawing.Size(22, 15);
             this.label7.TabIndex = 30;
             this.label7.Text = "女";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -151,6 +156,7 @@ namespace WindowsFormsApp1
             this.label8.Size = new System.Drawing.Size(22, 15);
             this.label8.TabIndex = 29;
             this.label8.Text = "男";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // rbfemale
             // 
@@ -161,6 +167,7 @@ namespace WindowsFormsApp1
             this.rbfemale.TabIndex = 28;
             this.rbfemale.TabStop = true;
             this.rbfemale.UseVisualStyleBackColor = true;
+            this.rbfemale.CheckedChanged += new System.EventHandler(this.rbfemale_CheckedChanged);
             // 
             // rbmale
             // 
@@ -171,6 +178,7 @@ namespace WindowsFormsApp1
             this.rbmale.TabIndex = 27;
             this.rbmale.TabStop = true;
             this.rbmale.UseVisualStyleBackColor = true;
+            this.rbmale.CheckedChanged += new System.EventHandler(this.rbmale_CheckedChanged);
             // 
             // StudentUpdate
             // 

@@ -23,6 +23,7 @@ namespace WindowsFormsApp1
             SnoNotNull.Visible = false;
             NameNotNull.Visible = false;
             label7.Visible = false;
+            label8.Visible = false;
             if (tbSno.Text == "" || tbSname.Text == "")
             {
                 if (tbSno.Text == "")
@@ -71,7 +72,7 @@ namespace WindowsFormsApp1
                     {
                         para[3].Value = Convert.ToInt32(tbSage.Text);
                     }
-                    catch(Exception ex)
+                    catch(Exception)
                     {
                         label7.Text = "年龄格式错误";
                         label7.Visible = true;
@@ -103,7 +104,9 @@ namespace WindowsFormsApp1
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    //MessageBox.Show(ex.Message);
+                    label8.Text = ex.Message;
+                    label8.Visible = true;
                 }
                 finally
                 {

@@ -19,18 +19,35 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            label4.Visible = false;
             Sc sc = new Sc();
             sc.Cno = Cno;
             sc.Sno = Sno;
-
-            sc.Grade = Convert.ToInt32(tbGrade.Text);
-            if(Sc.UpdateGrade(sc)==1)
+            try
             {
-                MessageBox.Show("修改成功");
+                sc.Grade = Convert.ToInt32(tbGrade.Text);
             }
-            else
+            catch(Exception)
             {
-                MessageBox.Show("修改失败");
+                label4.Text = "成绩输入错误";
+                label4.Visible = true;
+                return;
+            }
+            try
+            {
+                if (Sc.UpdateGrade(sc) == 1)
+                {
+                    MessageBox.Show("修改成功");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("修改失败");
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

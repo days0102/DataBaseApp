@@ -40,15 +40,20 @@ namespace WindowsFormsApp1
             else
                 t.Tname = tbTname.Text;
             t.Post = tbPost.Text;
-            try
+            if (tbSalary.Text == "")
+                t.Salary = 0;
+            else
             {
-                t.Salary = Convert.ToInt32(tbSalary.Text);
-            }
-            catch(Exception ex)
-            {
-                label7.Text = "工资输入错误";
-                label7.Visible = true;
-                return;
+                try
+                {
+                    t.Salary = Convert.ToInt32(tbSalary.Text);
+                }
+                catch (Exception)
+                {
+                    label7.Text = "工资输入错误";
+                    label7.Visible = true;
+                    return;
+                }
             }
             try
             {
@@ -58,7 +63,9 @@ namespace WindowsFormsApp1
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
+                label7.Text = ex.Message;
+                label7.Visible = true;
             }
         }
     }

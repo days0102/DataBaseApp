@@ -36,6 +36,7 @@ namespace WindowsFormsApp1
             this.tbSname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -98,11 +99,23 @@ namespace WindowsFormsApp1
             this.label1.TabIndex = 11;
             this.label1.Text = "学生姓名";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(178, 170);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 15);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "label4";
+            this.label4.Visible = false;
+            // 
             // UpdateGrade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 289);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tbGrade);
             this.Controls.Add(this.label3);
@@ -130,5 +143,6 @@ namespace WindowsFormsApp1
         public System.Windows.Forms.TextBox tbSname;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
     }
 }

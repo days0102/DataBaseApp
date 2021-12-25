@@ -20,6 +20,8 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            label7.Visible = false;
+            label8.Visible = false;
             OracleParameter[] para = new OracleParameter[]{
                 new OracleParameter(":name",OracleDbType.Varchar2,10),
                 new OracleParameter(":sex",OracleDbType.Varchar2,5),
@@ -56,7 +58,16 @@ namespace WindowsFormsApp1
             }
             else
             {
-                para[2].Value = Convert.ToInt32(tbSage.Text);
+                try
+                {
+                    para[2].Value = Convert.ToInt32(tbSage.Text);
+                }
+                catch (Exception)
+                {
+                    label8.Text = "年龄输入错误";
+                    label8.Visible = true;
+                    return;
+                }
             }
             string sql = "UPDATE Student SET Sname=:name,ssex=:sex,sage=:age WHERE Sno=:sno";
             OracleConnection con = new OracleConnection(Program.connect);

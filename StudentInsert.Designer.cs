@@ -44,13 +44,14 @@ namespace WindowsFormsApp1
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(88, 360);
+            this.button2.Location = new System.Drawing.Point(88, 352);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(201, 33);
+            this.button2.Size = new System.Drawing.Size(201, 41);
             this.button2.TabIndex = 14;
             this.button2.Text = "添加学生信息";
             this.button2.UseVisualStyleBackColor = true;
@@ -184,11 +185,23 @@ namespace WindowsFormsApp1
             this.label7.Text = "label7";
             this.label7.Visible = false;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(85, 334);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(55, 15);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "label8";
+            this.label8.Visible = false;
+            // 
             // StudentInsert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(413, 426);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -228,5 +241,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
